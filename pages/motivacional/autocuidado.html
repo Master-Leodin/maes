@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocuidado | Mães Solo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --cor-primaria: #FF6B8B;
+            --cor-secundaria: #4ECDC4;
+            --cor-clara: #FFF5F5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--cor-primaria);
+        }
+        
+        .bg-light-custom {
+            background-color: var(--cor-clara);
+        }
+        
+        .text-primary-custom {
+            color: var(--cor-primaria);
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e05d7a;
+            border-color: #e05d7a;
+        }
+        
+        .card-motivacional {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .card-motivacional:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .quote-icon {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../index.html">Mães Solo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../recursos/cuidado_filhos.html">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="inspiracao_diaria.html">Motivacional</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="../direitos/direitos.html">Direitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../loja.html">Loja</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container py-5 mt-5">
+        <h1 class="fw-bold text-primary-custom mb-4">Autocuidado para Mães Solo</h1>
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card card-motivacional mb-4">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597" class="card-img-top" alt="Mulher relaxando">
+                    <div class="card-body">
+                        <h2 class="card-title">5 Minutos que Mudam seu Dia</h2>
+                        <p class="card-text">Técnicas rápidas para recarregar as energias mesmo com a rotina apertada:</p>
+                        <ol class="mb-0">
+                            <li class="mb-2">Respiração consciente ao acordar</li>
+                            <li class="mb-2">Alongamento rápido enquanto o café esquenta</li>
+                            <li class="mb-2">Anotar uma coisa positiva do dia antes de dormir</li>
+                            <li class="mb-2">Beber água assim que acordar</li>
+                            <li class="mb-2">Escutar uma música que você ama durante o banho</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="card card-motivacional">
+                    <div class="card-body">
+                        <h2 class="card-title">Rotina de Autocuidado Realista</h2>
+                        <div class="accordion" id="accordionAutocuidado">
+                            <div class="accordion-item border-0 mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseManha">
+                                        Manhã
+                                    </button>
+                                </h3>
+                                <div id="collapseManha" class="accordion-collapse collapse" data-bs-parent="#accordionAutocuidado">
+                                    <div class="accordion-body">
+                                        <p>Comece o dia bebendo um copo de água. Enquanto prepara o café da manhã, faça alongamentos simples. Escreva ou mentalize uma intenção positiva para o dia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border-0 mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTarde">
+                                        Tarde
+                                    </button>
+                                </h3>
+                                <div id="collapseTarde" class="accordion-collapse collapse" data-bs-parent="#accordionAutocuidado">
+                                    <div class="accordion-body">
+                                        <p>Faça uma pausa de 5 minutos para respirar fundo. Coma algo nutritivo. Se possível, caminhe um pouco, mesmo que seja dentro de casa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoite">
+                                        Noite
+                                    </button>
+                                </h3>
+                                <div id="collapseNoite" class="accordion-collapse collapse" data-bs-parent="#accordionAutocuidado">
+                                    <div class="accordion-body">
+                                        <p>Antes de dormir, lave o rosto com água fria. Faça uma lista de 3 coisas boas que aconteceram no dia. Desligue as telas 30 minutos antes de dormir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card card-motivacional sticky-top" style="top: 20px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Lembre-se</h3>
+                        <p class="fst-italic">"Cuidar de você não é egoísmo, é necessidade. Só podemos cuidar dos outros quando estamos bem."</p>
+                        <div class="text-center mt-4">
+                            <i class="bi bi-heart-fill text-primary-custom fs-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Mães Solo</h5>
+                    <p>Apoio, informação e empoderamento para mães que criam seus filhos sozinhas.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-4">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../../index.html" class="text-white text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="../recursos/cuidado_filhos.html" class="text-white text-decoration-none">Cuidados</a></li>
+                        <li class="mb-2"><a href="inspiracao_diaria.html" class="text-white text-decoration-none">Motivacional</a></li>
+                        <li class="mb-2"><a href="../direitos/direitos.html" class="text-white text-decoration-none">Direitos</a></li>
+                        <li class="mb-2"><a href="../loja.html" class="text-white text-decoration-none">Loja</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Informações</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Termos de Uso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Nosso Blog</h6>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">10 dicas para organizar sua rotina</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">Como conversar com seu filho sobre família</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none">Direitos trabalhistas para mães solo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Mães Solo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para mães solo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

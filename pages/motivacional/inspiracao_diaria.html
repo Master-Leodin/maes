@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiração Diária | Mães Solo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --cor-primaria: #FF6B8B;
+            --cor-secundaria: #4ECDC4;
+            --cor-clara: #FFF5F5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--cor-primaria);
+        }
+        
+        .bg-light-custom {
+            background-color: var(--cor-clara);
+        }
+        
+        .text-primary-custom {
+            color: var(--cor-primaria);
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e05d7a;
+            border-color: #e05d7a;
+        }
+        
+        .card-motivacional {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .card-motivacional:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .quote-icon {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../index.html">Mães Solo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../recursos/cuidado_filhos.html">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../direitos/direitos.html">Direitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../loja.html">Loja</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container py-5 mt-5">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold text-primary-custom">Inspiração Diária</h1>
+            <p class="lead">Você é mais forte do que imagina</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-motivacional h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-book quote-icon mb-3"></i>
+                        <h3 class="card-title">Histórias de Superação</h3>
+                        <p class="card-text">Relatos reais de mães solo que transformaram desafios em conquistas.</p>
+                        <a href="historias.html" class="btn btn-primary-custom">Ler histórias</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card card-motivacional h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-heart quote-icon mb-3"></i>
+                        <h3 class="card-title">Autocuidado</h3>
+                        <p class="card-text">Dicas práticas para cuidar de si mesma enquanto cuida dos outros.</p>
+                        <a href="autocuidado.html" class="btn btn-primary-custom">Ver dicas</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card card-motivacional h-100">
+                    <div class="card-body text-center p-4">
+                        <i class="bi bi-people quote-icon mb-3"></i>
+                        <h3 class="card-title">Comunidade</h3>
+                        <p class="card-text">Junte-se a outras mães solo e fortaleça sua rede de apoio.</p>
+                        <a href="comunidade.html" class="btn btn-primary-custom">Participar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card card-motivacional">
+                    <div class="card-body text-center p-5">
+                        <i class="bi bi-chat-quote quote-icon mb-3"></i>
+                        <blockquote class="blockquote">
+                            <p>"Ser mãe solo não é sobre fazer tudo sozinha, mas sobre descobrir sua força interior e saber quando pedir ajuda."</p>
+                            <footer class="blockquote-footer mt-3">Patrícia, 32 anos</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Mães Solo</h5>
+                    <p>Apoio, informação e empoderamento para mães que criam seus filhos sozinhas.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-4">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../../index.html" class="text-white text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="../recursos/cuidado_filhos.html" class="text-white text-decoration-none">Cuidados</a></li>
+                        <li class="mb-2"><a href="inspiracao_diaria.html" class="text-white text-decoration-none">Motivacional</a></li>
+                        <li class="mb-2"><a href="../direitos/direitos.html" class="text-white text-decoration-none">Direitos</a></li>
+                        <li class="mb-2"><a href="../loja.html" class="text-white text-decoration-none">Loja</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Informações</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Termos de Uso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Nosso Blog</h6>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">10 dicas para organizar sua rotina</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">Como conversar com seu filho sobre família</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none">Direitos trabalhistas para mães solo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Mães Solo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para mães solo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

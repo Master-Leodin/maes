@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mães Solo - Apoio, Informação e Empoderamento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --cor-primaria: #FF6B8B;
+            --cor-secundaria: #4ECDC4;
+            --cor-clara: #FFF5F5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--cor-primaria);
+        }
+        
+        .bg-light-custom {
+            background-color: var(--cor-clara);
+        }
+        
+        .text-primary-custom {
+            color: var(--cor-primaria);
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e05d7a;
+            border-color: #e05d7a;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00');
+            background-size: cover;
+            background-position: center;
+            min-height: 500px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        
+        .product-card {
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Mães Solo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/recursos/cuidado_filhos.html">Cuidados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/motivacional/inspiracao_diaria.html">Motivacional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/direitos/direitos.html">Direitos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/loja.html">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Seção Hero -->
+    <section class="hero-section d-flex align-items-center text-white" id="inicio">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Juntas Somos Mais Fortes</h1>
+            <p class="lead mb-5">Apoio, informação e empoderamento para mães solo</p>
+            <a href="#cuidados" class="btn btn-primary-custom btn-lg px-4 me-2">Saiba Mais</a>
+            <a href="#contato" class="btn btn-outline-light btn-lg px-4">Participe</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="py-5 bg-light-custom">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold text-primary-custom mb-4">Sobre Nós</h2>
+                    <p class="lead">Somos uma comunidade de apoio às mães solo, oferecendo recursos, informações e uma rede de suporte para ajudar você a navegar pelos desafios e alegrias da maternidade solo.</p>
+                    <p>Nosso objetivo é empoderar, informar e conectar mães que criam seus filhos sozinhas, proporcionando um espaço seguro para compartilhar experiências, dúvidas e conquistas.</p>
+                    <a href="#" class="btn btn-primary-custom mt-3">Conheça nossa história</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="Mãe e filho" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Recursos -->
+    <section class="py-5" id="cuidados">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary-custom">Cuidados com os Filhos</h2>
+                <p class="lead">Dicas e informações essenciais para o desenvolvimento saudável do seu filho</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <h4 class="mb-3">Saúde Infantil</h4>
+                            <p>Guia completo sobre vacinação, alimentação saudável e cuidados médicos essenciais para cada fase do desenvolvimento.</p>
+                            <a href="pages/recursos/saude_infantil.html" class="btn btn-link text-primary-custom text-decoration-none">Ler mais <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <h4 class="mb-3">Educação</h4>
+                            <p>Estratégias para apoiar o aprendizado, escolha da escola ideal e atividades educativas para fazer em casa.</p>
+                            <a href="pages/recursos/educacao.html" class="btn btn-link text-primary-custom text-decoration-none">Ler mais <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <h4 class="mb-3">Desenvolvimento Emocional</h4>
+                            <p>Como abordar questões emocionais e comportamentais, ajudando seu filho a desenvolver resiliência e autoestima.</p>
+                            <a href="pages/recursos/desenvolvimento_emocional_filho.html" class="btn btn-link text-primary-custom text-decoration-none">Ler mais <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h4 class="mb-3">Atividades em Família</h4>
+                            <p>Ideias criativas para fortalecer o vínculo com seu filho, mesmo com uma rotina apertada e orçamento limitado.</p>
+                            <a href="pages/recursos/atividades_em_familia.html" class="btn btn-link text-primary-custom text-decoration-none">Ler mais <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Motivacional -->
+    <section class="py-5 bg-light-custom" id="motivacional">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary-custom">Inspiração Diária</h2>
+                <p class="lead">Você é mais forte do que imagina</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" class="card-img-top" alt="Mãe e filha">
+                        <div class="card-body">
+                            <h4 class="card-title">Histórias de Superação</h4>
+                            <p class="card-text">Leia relatos inspiradores de mães solo que venceram desafios e construíram uma vida feliz para si mesmas e seus filhos.</p>
+                            <a href="pages/motivacional/historias.html" class="btn btn-primary-custom">Ler histórias</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1516589091380-5d6019716b4a" class="card-img-top" alt="Mulher meditando">
+                        <div class="card-body">
+                            <h4 class="card-title">Autocuidado</h4>
+                            <p class="card-text">Técnicas simples para cuidar de si mesma, gerenciar o estresse e recarregar as energias mesmo com pouco tempo livre.</p>
+                            <a href="pages/motivacional/autocuidado.html" class="btn btn-primary-custom">Ver dicas</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" class="card-img-top" alt="Mulheres em reunião">
+                        <div class="card-body">
+                            <h4 class="card-title">Comunidade</h4>
+                            <p class="card-text">Junte-se a outras mães solo para compartilhar experiências, receber apoio e construir uma rede de suporte.</p>
+                            <a href="pages/motivacional/comunidade.html" class="btn btn-primary-custom">Participar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Direitos -->
+    <section class="py-5" id="direitos">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold text-primary-custom mb-4">Seus Direitos</h2>
+                    <p class="lead">Conheça os direitos garantidos por lei às mães solo</p>
+                    <div class="accordion mt-4" id="accordionDireitos">
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Pensão Alimentícia
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDireitos">
+                                <div class="accordion-body">
+                                    <p>Toda criança tem direito à pensão alimentícia, que deve cobrir necessidades básicas como alimentação, educação, saúde e lazer. O valor é definido com base nas necessidades da criança e na capacidade financeira do pai.</p>
+                                    <a href="pages/direitos/pensao_alimenticia.html" class="btn btn-sm btn-primary-custom">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Direitos Trabalhistas
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDireitos">
+                                <div class="accordion-body">
+                                    <p>Mães solo têm direito à estabilidade no emprego durante a gestação e após o parto, além de horários especiais para amamentação e prioridade em programas sociais.</p>
+                                    <a href="pages/direitos/direitos_trabalhistas.html" class="btn btn-sm btn-primary-custom">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Benefícios Sociais
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDireitos">
+                                <div class="accordion-body">
+                                    <p>Programas como Bolsa Família, auxílio-creche e isenção de taxas em concursos públicos estão disponíveis para mães solo de baixa renda.</p>
+                                    <a href="pages/direitos/beneficios_sociais.html" class="btn btn-sm btn-primary-custom">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Precisa de Ajuda Jurídica?</h4>
+                            <p>Nossa rede de advogados(as) pode orientar você sobre como garantir seus direitos e os de seu filho.</p>
+                            <p>(Em breve)</p>
+                            <!--<form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Seu nome">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Seu e-mail">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Descreva brevemente sua situação"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom w-100">Enviar solicitação</button>
+                            </form>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Loja -->
+    <section class="py-5 bg-light-custom" id="loja">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary-custom">Nossa Loja</h2>
+                <p class="lead">Produtos selecionados para facilitar sua vida</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/71vUZ7pUZ5L._AC_UL320_.jpg" class="card-img-top p-3" alt="Livro Mães Solo">
+                        <div class="card-body">
+                            <h5 class="card-title">Guia Prático para Mães Solo</h5>
+                            <p class="card-text text-muted small">Dicas de organização, finanças e autocuidado</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">R$ 39,90</span>
+                                <a href="#" class="btn btn-sm btn-primary-custom">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/61+Q6Rh5KIL._AC_UL320_.jpg" class="card-img-top p-3" alt="Organizador semanal">
+                        <div class="card-body">
+                            <h5 class="card-title">Planejador Semanal para Mães</h5>
+                            <p class="card-text text-muted small">Acompanhe compromissos, refeições e tarefas</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">R$ 29,90</span>
+                                <a href="#" class="btn btn-sm btn-primary-custom">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/71eJJO0xXIL._AC_UL320_.jpg" class="card-img-top p-3" alt="Livro infantil">
+                        <div class="card-body">
+                            <h5 class="card-title">Família é Tudo o que Importa</h5>
+                            <p class="card-text text-muted small">Livro infantil sobre diferentes estruturas familiares</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">R$ 34,90</span>
+                                <a href="#" class="btn btn-sm btn-primary-custom">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <img src="https://m.media-amazon.com/images/I/71D+QrlQzZL._AC_UL320_.jpg" class="card-img-top p-3" alt="Jogo educativo">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit Atividades para Crianças</h5>
+                            <p class="card-text text-muted small">Jogos educativos para fazer em casa</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary-custom">R$ 59,90</span>
+                                <a href="#" class="btn btn-sm btn-primary-custom">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="pages/loja.html" class="btn btn-primary-custom btn-lg">Ver todos os produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary-custom">O que dizem sobre nós</h2>
+                <p class="lead">Histórias reais de mães que fazem parte da nossa comunidade</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle testimonial-img mb-3" alt="Ana">
+                            <h5 class="mb-3">Ana, 28 anos</h5>
+                            <p class="mb-4">"Encontrei na comunidade o apoio que precisava quando me vi sozinha com minha filha. As informações sobre direitos me ajudaram a conseguir a pensão alimentícia."</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle testimonial-img mb-3" alt="Juliana">
+                            <h5 class="mb-3">Juliana, 35 anos</h5>
+                            <p class="mb-4">"As dicas de cuidados com os filhos me salvaram em vários momentos. E o grupo motivacional me fez perceber que não estou sozinha nessa jornada."</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle testimonial-img mb-3" alt="Patrícia">
+                            <h5 class="mb-3">Patrícia, 31 anos</h5>
+                            <p class="mb-4">"Comprei vários produtos indicados na loja e todos foram ótimos. O planejador semanal mudou minha vida, finalmente consegui me organizar melhor!"</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Newsletter -->
+    <section class="py-5 bg-primary-custom text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Receba nossas novidades</h2>
+                    <p class="lead mb-5">Cadastre-se para receber dicas exclusivas, promoções da loja e conteúdos motivacionais diretamente no seu e-mail.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Seu melhor e-mail">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light btn-lg w-100">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+               <div class="col-lg-6" id="contato">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-4">Envie uma mensagem</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Assunto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom w-100">Enviar mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Mães Solo</h5>
+                    <p>Apoio, informação e empoderamento para mães que criam seus filhos sozinhas.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-4">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="#cuidados" class="text-white text-decoration-none">Cuidados</a></li>
+                        <li class="mb-2"><a href="#motivacional" class="text-white text-decoration-none">Motivacional</a></li>
+                        <li class="mb-2"><a href="#direitos" class="text-white text-decoration-none">Direitos</a></li>
+                        <li class="mb-2"><a href="#loja" class="text-white text-decoration-none">Loja</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Informações</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Termos de Uso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Nosso Blog</h6>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">10 dicas para organizar sua rotina</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">Como conversar com seu filho sobre família</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none">Direitos trabalhistas para mães solo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Mães Solo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para mães solo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

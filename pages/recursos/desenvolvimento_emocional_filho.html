@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Emocional | Mães Solo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --cor-primaria: #FF6B8B;
+            --cor-secundaria: #4ECDC4;
+            --cor-clara: #FFF5F5;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary-custom {
+            background-color: var(--cor-primaria);
+        }
+        
+        .bg-light-custom {
+            background-color: var(--cor-clara);
+        }
+        
+        .text-primary-custom {
+            color: var(--cor-primaria);
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+            color: white;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #e05d7a;
+            border-color: #e05d7a;
+        }
+        
+        .card-recurso {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        
+        .card-recurso:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .recurso-icon {
+            font-size: 2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../index.html">Mães Solo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cuidado_filhos.html">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../motivacional/inspiracao_diaria.html">Motivacional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../direitos/direitos.html">Direitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../loja.html">Loja</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container py-5 mt-5">
+        <h1 class="fw-bold text-primary-custom mb-4">Desenvolvimento Emocional</h1>
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card card-recurso mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Como Falar Sobre Família</h2>
+                        <p>Orientações para abordar a estrutura familiar com seu filho:</p>
+                        
+                        <div class="accordion" id="accordionFamilia">
+                            <div class="accordion-item border-0 mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerguntas">
+                                        Respondendo Perguntas Difíceis
+                                    </button>
+                                </h3>
+                                <div id="collapsePerguntas" class="accordion-collapse collapse" data-bs-parent="#accordionFamilia">
+                                    <div class="accordion-body">
+                                        <p>Seja honesta, mas adapte a resposta à idade da criança. Exemplo: "Cada família é diferente. Nossa família é você e eu, e nos amamos muito."</p>
+                                        <p>Use livros infantis que mostram diferentes estruturas familiares para facilitar a conversa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border-0 mb-3">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSentimentos">
+                                        Lidando com os Sentimentos da Criança
+                                    </button>
+                                </h3>
+                                <div id="collapseSentimentos" class="accordion-collapse collapse" data-bs-parent="#accordionFamilia">
+                                    <div class="accordion-body">
+                                        <p>Valide os sentimentos do seu filho: "Sei que às vezes você sente falta de ter um pai em casa, e isso é normal."</p>
+                                        <p>Mostre que muitas crianças têm famílias diferentes e todas podem ser felizes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border-0">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModelos">
+                                        Oferecendo Modelos Positivos
+                                    </button>
+                                </h3>
+                                <div id="collapseModelos" class="accordion-collapse collapse" data-bs-parent="#accordionFamilia">
+                                    <div class="accordion-body">
+                                        <p>Identifique figuras masculinas positivas na família ou comunidade que possam ser referências.</p>
+                                        <p>Converse sobre personagens de livros ou filmes que tenham famílias diversas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card card-recurso">
+                    <div class="card-body">
+                        <h2 class="card-title">Fortalecendo a Autoestima</h2>
+                        <p>Práticas diárias para ajudar seu filho a desenvolver autoconfiança:</p>
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light-custom h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elogie o Esforço</h5>
+                                        <p class="card-text">"Vi que você se esforçou muito para fazer isso!" em vez de apenas "Você é inteligente".</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light-custom h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dê Responsabilidades</h5>
+                                        <p class="card-text">Tarefas adequadas à idade fazem a criança se sentir capaz e importante.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light-custom h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aceite os Sentimentos</h5>
+                                        <p class="card-text">Permita que a criança expresse raiva, tristeza ou frustração de forma saudável.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light-custom h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Brincadeiras Livres</h5>
+                                        <p class="card-text">Tempo para brincar sem direção adulta desenvolve criatividade e autonomia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card card-recurso sticky-top" style="top: 20px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Quando Buscar Ajuda</h3>
+                        <p>Sinais de que seu filho pode precisar de apoio profissional:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Mudanças bruscas de comportamento</li>
+                            <li class="list-group-item">Dificuldade para dormir ou pesadelos frequentes</li>
+                            <li class="list-group-item">Regressão em habilidades já adquiridas</li>
+                            <li class="list-group-item">Isolamento social prolongado</li>
+                            <li class="list-group-item">Baixo rendimento escolar persistente</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary-custom mt-3 w-100">Encontrar Psicólogo Infantil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Mães Solo</h5>
+                    <p>Apoio, informação e empoderamento para mães que criam seus filhos sozinhas.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-4">Links Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../../index.html" class="text-white text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="cuidado_filhos.html" class="text-white text-decoration-none">Cuidados</a></li>
+                        <li class="mb-2"><a href="../motivacional/inspiracao_diaria.html" class="text-white text-decoration-none">Motivacional</a></li>
+                        <li class="mb-2"><a href="../direitos/direitos.html" class="text-white text-decoration-none">Direitos</a></li>
+                        <li class="mb-2"><a href="../loja.html" class="text-white text-decoration-none">Loja</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Informações</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Termos de Uso</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-4">Nosso Blog</h6>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">Rotina saudável para crianças</a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-white text-decoration-none">Educação financeira infantil</a>
+                    </div>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none">Atividades educativas em casa</a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Mães Solo. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para mães solo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
